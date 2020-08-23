@@ -60,7 +60,7 @@
 				<image class="we1" wx:key="image" src="{{item.image}}"></image>
 				<text wx:key="mark" class="thing-t-model">{{item.mark}}</text>
 				<text wx:key="info" class="thing-info">{{item.info}}</text>
-				<view class="diplay-inrow">
+				<view class="display-inrow">
 					<text wx:key="price" class="thing-price">{{item.price}}</text>
 					<text wx:key="oldprice" class="oldprice">{{item.oldprice}}</text>
 					<image wx:key="oldprice" class="buy-icon" src="{{item.icon}}"></image>
@@ -72,7 +72,7 @@
 				<image class="we1" wx:key="image" src="{{item.image}}"></image>
 				<text wx:key="mark" class="thing-t-model">{{item.mark}}</text>
 				<text wx:key="info" class="thing-info">{{item.info}}</text>
-				<view class="diplay-inrow">
+				<view class="display-inrow">
 					<text wx:key="price" class="thing-price">{{item.price}}</text>
 					<text wx:key="oldprice" class="oldprice">{{item.oldprice}}</text>
 					<image wx:key="oldprice" class="buy-icon" src="{{item.icon}}"></image>

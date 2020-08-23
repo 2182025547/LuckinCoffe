@@ -1,11 +1,15 @@
 /* pages/home/home.wxss */
+page{
+  min-height: 100%;
+}
 .home-container{
-  background-image: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1056677498,243506055&fm=26&gp=0.jpg");
-  background-repeat:no-repeat;
+  background-image: url("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2896673728,774231034&fm=26&gp=0.jpg");
+  /* background-repeat:no-repeat; */
   background-attachment: fixed;
   background-position: center;
-  background-size:115% ;
-  /* background-color:rgba(161, 221, 245, 0.582); */
+  background-size:auto;
+  /* background-repeat: ; */
+  background-color:rgba(161, 221, 245, 0.582);
   display:flex;
   flex-direction: column;
   margin-top:0;
@@ -183,21 +187,25 @@ text{
 .thing-price{
   font-size:38rpx;
   color:rgba(233, 92, 21, 0.951);
-  margin-left:15rpx;
-  margin-right: 25rpx;
+  margin-left:17rpx;
+  margin-right: auto;
   
 }
 /* 老价 */
 .oldprice{
   font-size:28rpx;
-  margin-right: 130rpx;
+  /* margin-right: 130rpx; */
   text-decoration:line-through;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /* 购物车图标 */
 .buy-icon{
   width:30rpx;
   height:30rpx;
   margin-left:auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 /* 展示方式 */
 .display-inrow{
