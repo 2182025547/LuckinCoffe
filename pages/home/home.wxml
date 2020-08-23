@@ -1,0 +1,85 @@
+<!--pages/home/home.wxml-->
+<view class="home-container">
+	<swiper class="home-c-swiper" indicator-dots="true" autoplay="true" circular="true">
+		<swiper-item id="home-s1">
+			<image src="../../images/s1.jpg" mode="widthFix"></image>
+		</swiper-item>
+		<swiper-item id="home-s2">
+			<image src="../../images/s2.jpg" mode="widthFix"></image>
+		</swiper-item>
+		<swiper-item id="home-s3">
+			<image src="../../images/s3.jpg" mode="widthFix"></image>
+		</swiper-item>
+		<swiper-item id="home-s4">
+			<image src="../../images/s4.jpg" mode="widthFix"></image>
+		</swiper-item>
+		<swiper-item id="home-s5">
+			<image src="../../images/s5.jpg" mode="widthFix"></image>
+		</swiper-item>
+		<swiper-item id="home-s6">
+			<image src="../../images/s6.jpg" mode="widthFix"></image>
+		</swiper-item>
+	</swiper>
+	<view class="function-block">
+		<!--大块-->
+		<view class="line">
+			<view wx:key="x" class="x" wx:for="{{x}}">
+				<text wx:key="big" class="big">{{key}}</text><text wx:key="small" class="small">{{item.small}}</text>
+			</view>
+		</view>
+		<!--中块-->
+		<view class="line-small">
+			<view wx:key="m" class="m" wx:for="{{m}}">
+				<text wx:key="text" class="normal">{{item.text}}</text>
+			</view>
+			<!--小块-->
+			<view class="column">
+				<view wx:key="l" class="l" wx:for="{{l}}">
+					<text wx:key="text" class="small">{{item.text}}</text>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<text class="second-title">新鲜事</text>
+	<scroll-view class="showx" circular="true" scroll-x="true" style=" white-space: nowrap;">
+		<image src="../../images/sv1.jpg" mode="heightFix"></image>
+		<image src="../../images/sv2.jpeg" mode="heightFix"></image>
+		<image src="../../images/sv3.jpg" mode="heightFix"></image>
+		<image src="../../images/sv4.jpg" mode="heightFix"></image>
+		<image src="../../images/sv5.jpg" mode="heightFix"></image>
+		<image></image>
+	</scroll-view>
+	<view class="display-inrow">
+		<text class="three">瑞幸潮品</text><text class="text-desc">直邮到家</text><text class="more">更多</text>
+	</view>
+	<view class="display-inrow">
+		<view class="display-incolumn">
+			<view wx:key="mydata2" class="thing-model" wx:for="{{mydata2}}">
+				<image class="we1" wx:key="image" src="{{item.image}}"></image>
+				<text wx:key="mark" class="thing-t-model">{{item.mark}}</text>
+				<text wx:key="info" class="thing-info">{{item.info}}</text>
+				<view class="diplay-inrow">
+					<text wx:key="price" class="thing-price">{{item.price}}</text>
+					<text wx:key="oldprice" class="oldprice">{{item.oldprice}}</text>
+					<image wx:key="oldprice" class="buy-icon" src="{{item.icon}}"></image>
+				</view>
+			</view>
+		</view>
+		<view class="display-incolumn">
+			<view wx:key="mydata2" class="thing-model" wx:for="{{mydata2}}">
+				<image class="we1" wx:key="image" src="{{item.image}}"></image>
+				<text wx:key="mark" class="thing-t-model">{{item.mark}}</text>
+				<text wx:key="info" class="thing-info">{{item.info}}</text>
+				<view class="diplay-inrow">
+					<text wx:key="price" class="thing-price">{{item.price}}</text>
+					<text wx:key="oldprice" class="oldprice">{{item.oldprice}}</text>
+					<image wx:key="oldprice" class="buy-icon" src="{{item.icon}}"></image>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+</view>
