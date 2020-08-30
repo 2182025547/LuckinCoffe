@@ -1,13 +1,23 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!-- 显示用户头像、微信名 -->
+<view class="top-container">
+	<image mode="widthFix" class="head-image" src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=251289958,1860898046&fm=26&gp=0.jpg"></image>
+	<text class="user-nickname">木公易开心</text>
+	<image mode="widthFix" src="../../images/arrow_right.png" class="top-icon"></image>
+</view>
+<!-- 显示账户余额等信息 -->
+<view class="infoTable">
+	<view class="infoModel" wx:for="{{mydata}}">
+		<text class="selfInfo">{{item.info}}<text >{{item.a}}</text></text>
+		<text class="ts">{{item.ts}}</text>
+	</view>
+</view>
+<!--  -->
+<view class="center-content">
+	<view class="list-modle" wx:for="{{mydata2}}">
+		<view class="modle-head">
+			<image src="../../images/{{item.image}}" class="icon1" mode="widthFix"></image>
+			<text class="name">{{item.info}}</text>
+		</view>
+		<image src="../../images/arrow_right.png" class="icon2" mode="widthFix"></image>
+	</view>
 </view>

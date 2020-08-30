@@ -1,21 +1,81 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.top-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  background-color:rgb(150, 241, 237);
+  padding-top:120rpx;
+  padding-left:40rpx;
+  padding-bottom:20rpx;
 }
+.head-image{
+  width:150rpx;
+  border-radius: 150rpx;
+  border:white solid 2rpx;
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.user-nickname{
+  padding-left:20rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.top-icon{
+  width:40rpx;
+}
+/*  */
+.infoTable{
+  display:flex;
+  border-radius:15rpx;
+  border:2rpx black solid;
+  margin:10rpx 25rpx;
+  
+}
+.infoModel{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+  align-items:center;
+  border-left-style:solid;
+  padding:10rpx;
+}
+.selfInfo{
+  color:rgb(188, 0, 188);
+  
+}
+.selfInfo text{
+  font-size:28rpx;
+  color:black;
+}
+.ts{
+  font-size:33rpx;
+  color:rgb(97, 97, 97);
+}
+/*  */
+.center-content{
+  border:1rpx white solid;
+  border-radius:13rpx;
+  padding:15rpx 10rpx;
+  margin:15rpx ;
+  background-color:white;
+}
+.list-modle{
+  display:flex;
+  justify-content:space-between;
+  padding:15rpx 10rpx;
+}
+.icon1{
+  width:50rpx;
+}
+.name{
+  font-size:33rpx;
+  display:flex;
+  align-self:flex-start;
+}
+.icon2{
+  width:50rpx;
+}
+.modle-head{
+  display:flex;
+  flex-direction:row;
+}
+page{
+  background-color:rgb(245, 245, 245);
 }

@@ -153,7 +153,7 @@ text{
   flex-direction: column;
   background-color:white;
   border-radius:15rpx;
-  border:1rpx solid black;
+  /* border:1rpx solid rgb(255, 254, 199); */
   width:340rpx;
   height:360rpx;
   margin:10rpx;
@@ -175,6 +175,7 @@ text{
   margin-top:10rpx;
   margin-bottom:7rpx;
   margin-left: 15rpx;
+  /* text-align-last: justify; */
   margin-right:auto;
 }
 /* 商品名称 */
@@ -188,7 +189,8 @@ text{
   font-size:38rpx;
   color:rgba(233, 92, 21, 0.951);
   margin-left:17rpx;
-  margin-right: auto;
+  margin-right: 15rpx;
+
   
 }
 /* 老价 */
@@ -201,11 +203,14 @@ text{
 }
 /* 购物车图标 */
 .buy-icon{
-  width:30rpx;
-  height:30rpx;
+  width:40rpx;
+  height:40rpx;
   margin-left:auto;
   margin-top: auto;
   margin-bottom: auto;
+  background-color: rgb(255, 174, 24);
+  border-radius: 30rpx;
+  /* align-items:flex-end ; */
 }
 /* 展示方式 */
 .display-inrow{
